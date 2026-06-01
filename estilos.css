@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+body {
+    background-image: url('fondoUNID.png');
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla sin importar el tamaño */
+    background-position: center; /* Centra la imagen (para que el lobo quede en medio) */
+    background-repeat: no-repeat; /* Evita que la imagen se multiplique como mosaico */
+    background-attachment: fixed; /* Hace que el fondo se quede quieto aunque bajes la pantalla */
+
+    background-color: #f4f7f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+
+}
+
+/* Contenedor flexible*/
+.form-container {
+    background: #080716;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 500px;
+}
+
+h2 {
+    margin-bottom: 20px;
+    text-align: center;
+    color: white;
+
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #555;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    background-color: #f7a800;
+    color: #080716;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+@media (max-width: 480px) {
+    .form-container {
+        padding: 20px;
+    }
+}
+
+#logo{
+    height: auto;
+    max-width: 40%;
+}
+
+label{
+    color: rgba(255, 255, 255, 0.673);
+}
+
+.derechos {
+    margin-top: 25px;
+    font-size: 12px;
+    color: #888;
+    text-align: center;
+    border-top: 1px solid #eee; /* Una pequeña línea separadora arriba */
+    padding-top: 15px;
+}
