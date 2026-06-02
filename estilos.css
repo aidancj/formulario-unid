@@ -7,31 +7,16 @@
 
 body {
     background-image: url('fondoUNID.png');
-    background-size: cover; /* Hace que la imagen cubra toda la pantalla sin importar el tamaño */
-    background-position: center; /* Centra la imagen (para que el lobo quede en medio) */
-    background-repeat: no-repeat; /* Evita que la imagen se multiplique como mosaico */
-    background-attachment: fixed; /* Hace que el fondo se quede quieto aunque bajes la pantalla */
-
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-attachment: fixed; 
     background-color: #f4f7f6;
     display: flex;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-    
-    margin: 0;
-    padding: 0;
-    min-height: 100vh;
-    background-image: url('fondoUNID.png');
-    background-size: cover;          
-    background-position: center;    
-    background-repeat: no-repeat;  
-    background-attachment: fixed;   
-    
-    /* Centrado perfecto del contenedor del formulario */
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 /* Contenedor flexible*/
@@ -48,23 +33,31 @@ h2 {
     margin-bottom: 20px;
     text-align: center;
     color: white;
-
 }
 
 label {
     display: block;
     margin-bottom: 8px;
     font-weight: bold;
-    color: #555;
+    color: rgba(255, 255, 255, 0.673);
 }
 
-input {
+/* AQUÍ ESTÁ EL AJUSTE: Agregamos max-width y display block */
+input[type="text"], input[type="date"], input[type="email"], select {
     width: 100%;
-    padding: 12px;
+    max-width: 100%; /* Fuerza al calendario a no salirse de los límites */
+    display: block; /* Asegura que respete el contenedor padre */
+    background-color: white;
+    border-radius: 4px; 
+    outline: none;
+    box-sizing: border-box;
+    padding: 14px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 4px;
     font-size: 16px;
+    /* Ajuste extra para celulares Apple */
+    -webkit-appearance: none; 
+    appearance: none;
 }
 
 button {
@@ -80,19 +73,21 @@ button {
     transition: background 0.3s ease;
 }
 
+/* AJUSTE PARA MÓVILES: Reducimos padding para que no se apriete */
 @media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
     .form-container {
-        padding: 20px;
+        padding: 25px 15px; /* Menos espacio a los lados, más espacio para el texto */
     }
 }
 
 #logo{
     height: auto;
     max-width: 40%;
-}
-
-label{
-    color: rgba(255, 255, 255, 0.673);
+    display: block;
+    margin: 0 auto 20px auto;
 }
 
 .derechos {
@@ -100,25 +95,6 @@ label{
     font-size: 12px;
     color: #888;
     text-align: center;
-    border-top: 1px solid #eee; /* Una pequeña línea separadora arriba */
+    border-top: 1px solid #eee;
     padding-top: 15px;
-}
-
-#issue{
-    display: block;
-    margin-bottom: 8px;
-    font-weight: bold;
-    color: #000000;
-}
-
-input[type="text"], input[type="date"], input[type="email"], select {
-    width: 100%;
-    background-color: white;
-    border-radius: 4px; 
-    outline: none;
-    box-sizing: border-box;
-    padding: 14px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    font-size: 16px;
 }
