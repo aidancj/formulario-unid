@@ -111,7 +111,7 @@ label{
     color: #000000;
 }
 
-input[type="text"], select {
+input[type="text"], input[type="date"], input[type="email"], select {
     width: 100%;
     background-color: white;
     border-radius: 4px; 
