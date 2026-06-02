@@ -18,7 +18,20 @@ body {
     align-items: center;
     min-height: 100vh;
     padding: 20px;
-
+    
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    background-image: url('fondoUNID.png');
+    background-size: cover;          
+    background-position: center;    
+    background-repeat: no-repeat;  
+    background-attachment: fixed;   
+    
+    /* Centrado perfecto del contenedor del formulario */
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Contenedor flexible*/
