@@ -90,3 +90,23 @@ label{
     border-top: 1px solid #eee; /* Una pequeña línea separadora arriba */
     padding-top: 15px;
 }
+
+#issue{
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #000000;
+}
+
+input[type="text"], select {
+    width: 100%;
+    background-color: white;
+    border-radius: 4px; 
+    height: 42px; 
+    outline: none;
+    box-sizing: border-box;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
