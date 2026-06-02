@@ -2,7 +2,7 @@ document.getElementById('whatsappForm').addEventListener('submit', function(e) {
     e.preventDefault(); 
 
     // El número al que se enviará el WhatsApp
-    const numeroAdministracion = "527831159516"; 
+    const numeroAdministracion = "527831385140"; 
 
     // 1. Capturar todos los campos nuevos usando los IDs correctos de tu HTML
     const nombre = document.getElementById('nombreAlumno').value.trim();
