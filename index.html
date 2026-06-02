@@ -25,19 +25,45 @@
         <h2>Formulario</h2>
         <form id="whatsappForm">
 
-            <label for="name">Nombre del Alumno:</label>
-            <input type="text" id="name" required>
+            <label for="nombreAlumno">Nombre del Alumno:</label>
+            <input type="text" id="nombreAlumno" required>
 
-            <label for="issue">Asunto o Trámite:</label>
-            <select id="issue" required>
-                <option value="" disabled selected>Selecciona una opción...</option>
-                <option value="Inscripción">Inscripción</option>
-                <option value="Constancia de Estudios">Constancia de Estudios</option>
-                <option value="Servicio Social">Servicio Social</option>
-                <option value="Estadía">Estadía</option>
-                <option value="Pagos">Pagos</option>
-                <option value="Duda General">Duda General</option>
+            <label for="fechaNacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fechaNacimiento" required>
+                
+            <label for="estadoCivil">Estado civil:</label>
+            <select id = "estadoCivil" name="estadoCivil" required>
+                <option value="" disabled selected> Selecciona una opción...</option>
+                <option value="soltero">Soltero(a)</option>
+                <option value="casado">Casado(a)</option>
+                <option value="divorciado">Divorciado(a)</option>
+                <option value="viudo">Viudo(a)</option>
+                <option value="unionLibre">Unión Libre</option>
             </select>
+                
+            <label for="lugarNacimiento">Lugar de nacimiento:</label>
+            <input type="text" id="lugarNacimiento" required>
+                
+            <label for="correo">Correo Electrónico:</label>
+            <input type="mail" id="correo" required>
+                
+            <label for="curp">CURP:</label>
+            <input type="text" id="curp" minlength="18" maxlength="18" required>
+   
+            <label for="numeroTelefonico">Número Telefónico:</label>
+            <input type="text" id="numeroTelefonico" required>
+                
+            <label for="numeroCasa">Número de casa (en caso de tenerlo):</label>
+            <input type="text" id="numeroCasa">
+            
+            <label for="direccion">Dirección de casa (calle, colonia, ciudad, estado y código postal):</label>
+            <input type="text" id="direccion" required>
+                
+            <label for="nombreTutor">Nombre del Tutor:</label>
+            <input type="text" id="nombreTutor" required>
+                
+            <label for="numeroTutor">Número del tutor:</label>
+            <input type="text" id="numeroTutor" required>
 
             <button type="submit">Enviar a WhatsApp</button>
         </form>
