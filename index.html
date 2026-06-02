@@ -11,6 +11,12 @@
     <link rel="shortcut icon" href="./favicon_io/favicon.ico" />
     <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/favicon/apple-touch-icon.png" />
     <link rel="manifest" href="./favicon_io/site.webmanifest" />
+
+    <meta property="og:title" content="Formulario UNID" />
+    <meta property="og:description" content="Envía tus datos y trámites directamente por WhatsApp." />
+    <meta property="og:image" content="https://aidancj.github.io/formulario-unid/favicon/apple-touch-icon.png" />
+    <meta property="og:type" content="website" />
+
 </head>
 <body>
 
@@ -19,12 +25,19 @@
         <h2>Formulario</h2>
         <form id="whatsappForm">
 
-            
             <label for="name">Nombre del Alumno:</label>
             <input type="text" id="name" required>
 
             <label for="issue">Asunto o Trámite:</label>
-            <input type="text" id="issue" required>
+            <select id="issue" required>
+                <option value="" disabled selected>Selecciona una opción...</option>
+                <option value="Inscripción">Inscripción</option>
+                <option value="Constancia de Estudios">Constancia de Estudios</option>
+                <option value="Servicio Social">Servicio Social</option>
+                <option value="Estadía">Estadía</option>
+                <option value="Pagos">Pagos</option>
+                <option value="Duda General">Duda General</option>
+            </select>
 
             <button type="submit">Enviar a WhatsApp</button>
         </form>
